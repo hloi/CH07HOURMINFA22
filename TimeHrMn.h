@@ -8,9 +8,13 @@
 
 class TimeHrMn {
 public:
+
     TimeHrMn(int timeHours = 0, int timeMinutes = 0);
     void Print() const;
     TimeHrMn operator+(TimeHrMn rhs) ;
+    int getHours() const;
+    int getMinutes() const;
+
 private:
     int hours;
     int minutes;
