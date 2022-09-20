@@ -1,6 +1,12 @@
-#include <iostream>
+#include "TimeHrMn.h"
 
 int main() {
-    std::cout << "Hello, World!" << std::endl;
+    TimeHrMn time1(3, 22);
+    TimeHrMn time2(2, 50);
+    TimeHrMn sumTime;
+
+    sumTime = time1 + time2;
+    sumTime.Print();
+
     return 0;
 }
